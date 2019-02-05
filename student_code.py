@@ -152,7 +152,7 @@ class KnowledgeBase(object):
                         string += "SUPPORTED BY\n"
                         if supported_fact.asserted == True:
                             start = 0
-                            num_indent = 4
+                            num_indent = num_spaces + 4
                             while num_indent > start:
                                 string += " "
                                 start += 1
