@@ -170,6 +170,7 @@ class KnowledgeBase(object):
                             for statement in supported_rule.lhs:
                                 string += str(statement)
                                 string += ", "
+                            string = string[:-2]
                             string += ") "
                             string += "-> " + str(supported_rule.rhs) + " ASSERTED\n"
                         else:
